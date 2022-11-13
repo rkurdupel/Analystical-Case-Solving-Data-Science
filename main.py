@@ -164,3 +164,19 @@ avg_max_employees = round(df["Maximum employees"].mean())
 #print(df["Size"])
 
 print(f"Minimum average number of employees: {avg_min_employees}\nMaximum average number of employees: {avg_max_employees}")
+
+
+df["Rating"] =  df["Rating"].replace(-1, 0)
+print(df["Rating"])
+
+
+# ---------------------
+# GRAPH / PLOT CREATION
+# ---------------------
+
+import matplotlib.pyplot as plt # імпорт бібліотеки
+
+d = df["Rating"]
+d.plot(kind = "hist")   # зробити графік з видом hist гістограма за допомогою метода plot() від pandas
+
+#plt.show()  # відобразити графік
