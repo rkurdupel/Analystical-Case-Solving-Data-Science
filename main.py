@@ -179,4 +179,4 @@ import matplotlib.pyplot as plt # імпорт бібліотеки
 d = df["Rating"]
 d.plot(kind = "hist")   # зробити графік з видом hist гістограма за допомогою метода plot() від pandas
 
-#plt.show()  # відобразити графік
+plt.show()  # відобразити графік
